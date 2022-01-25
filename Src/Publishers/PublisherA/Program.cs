@@ -11,7 +11,7 @@ builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
 
 builder.Services.AddDbContext<ProjectContext>(opt =>
-    opt.UseInMemoryDatabase("BusManagerWithOutbox")
+    opt.UseSqlServer("Server=localhost;Database=BusManagerWithOutboxPatternDb;User=sa;Password=P@55w0rd")
 );
 
 var app = builder.Build();
@@ -21,6 +21,10 @@ if (app.Environment.IsDevelopment())
 {
     app.UseSwagger();
     app.UseSwaggerUI();
+
+    using var scope = app.Services.CreateScope();
+    var context = scope.ServiceProvider.GetRequiredService<ProjectContext>();
+    var response = await context.Database.EnsureCreatedAsync();
 }
 
 app.UseHttpsRedirection();

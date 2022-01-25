@@ -12,7 +12,12 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Src", "Src", "{796CE25F-381
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Publishers", "Publishers", "{2B3FE67F-5AF8-4B51-BB94-6A504F877072}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PublisherA", "Src\Publishers\PublisherA\PublisherA.csproj", "{17AD6E28-3CE9-44B4-8B29-4222AE398BC8}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "PublisherA", "Src\Publishers\PublisherA\PublisherA.csproj", "{17AD6E28-3CE9-44B4-8B29-4222AE398BC8}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Mssql", "Mssql", "{6DF7594A-C0BA-40F1-81CC-CA6F755BF4EB}"
+	ProjectSection(SolutionItems) = preProject
+		Docs\Mssql\docker-compose.yml = Docs\Mssql\docker-compose.yml
+	EndProjectSection
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -31,6 +36,7 @@ Global
 	GlobalSection(NestedProjects) = preSolution
 		{2B3FE67F-5AF8-4B51-BB94-6A504F877072} = {796CE25F-381F-4E39-8F97-8372BF55B391}
 		{17AD6E28-3CE9-44B4-8B29-4222AE398BC8} = {2B3FE67F-5AF8-4B51-BB94-6A504F877072}
+		{6DF7594A-C0BA-40F1-81CC-CA6F755BF4EB} = {45C8746C-E8BC-43F3-AE4D-6688BBB1C754}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {5E97E98C-73F5-483D-A3F6-68617EA2AC37}
