@@ -19,6 +19,10 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Mssql", "Mssql", "{6DF7594A
 		Docs\Mssql\docker-compose.yml = Docs\Mssql\docker-compose.yml
 	EndProjectSection
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Distributors", "Distributors", "{B8E026D4-B06F-49B1-9F61-E3A3AEA623DD}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DistributorApp", "Src\Distributors\DistributorApp\DistributorApp.csproj", "{04BF820A-F5DC-4A98-8679-2AAE2DE74598}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -29,6 +33,10 @@ Global
 		{17AD6E28-3CE9-44B4-8B29-4222AE398BC8}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{17AD6E28-3CE9-44B4-8B29-4222AE398BC8}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{17AD6E28-3CE9-44B4-8B29-4222AE398BC8}.Release|Any CPU.Build.0 = Release|Any CPU
+		{04BF820A-F5DC-4A98-8679-2AAE2DE74598}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{04BF820A-F5DC-4A98-8679-2AAE2DE74598}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{04BF820A-F5DC-4A98-8679-2AAE2DE74598}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{04BF820A-F5DC-4A98-8679-2AAE2DE74598}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -37,6 +45,8 @@ Global
 		{2B3FE67F-5AF8-4B51-BB94-6A504F877072} = {796CE25F-381F-4E39-8F97-8372BF55B391}
 		{17AD6E28-3CE9-44B4-8B29-4222AE398BC8} = {2B3FE67F-5AF8-4B51-BB94-6A504F877072}
 		{6DF7594A-C0BA-40F1-81CC-CA6F755BF4EB} = {45C8746C-E8BC-43F3-AE4D-6688BBB1C754}
+		{B8E026D4-B06F-49B1-9F61-E3A3AEA623DD} = {796CE25F-381F-4E39-8F97-8372BF55B391}
+		{04BF820A-F5DC-4A98-8679-2AAE2DE74598} = {B8E026D4-B06F-49B1-9F61-E3A3AEA623DD}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {5E97E98C-73F5-483D-A3F6-68617EA2AC37}
